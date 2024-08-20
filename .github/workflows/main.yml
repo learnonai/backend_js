@@ -13,6 +13,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Updated to Node.js version 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Application
+        run: npm start
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -20,5 +31,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Deploy static site to S3 bucket
+      - name: Deploy application to S3 bucket
         run: aws s3 sync . s3://backend-java-script --delete
