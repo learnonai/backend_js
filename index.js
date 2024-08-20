@@ -8,14 +8,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/twitter', (req,res)=>{
-    res.send('someshnawale now on the twitter...!')
+    res.send('somesh nawale now on the twitter...!')
 })
 app.get('/login',(req,res)=>{
     res.send('<h1>Please login at ram hari gopal</h1>')
 })
 
 app.get('/youtube', (req,res) =>{
-    res.send('<h2>You can watch video.<h/2>')
+    res.send('<h2>You can watch video.</h2>')
 })
 app.get('/facebook',(req,res)=>{
     res.send('<h3>Facebook logge in success...!</h3>')
