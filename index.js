@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/twitter', (req,res)=>{
-    res.send('someshnawale')
+    res.send('someshnawale now on the twitter...!')
 })
 app.get('/login',(req,res)=>{
     res.send('<h1>Please login at ram hari gopal</h1>')
