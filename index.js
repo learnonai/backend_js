@@ -15,10 +15,13 @@ app.get('/login',(req,res)=>{
 })
 
 app.get('/youtube', (req,res) =>{
-    res.send('<h2>You can watch video.</2>')
+    res.send('<h2>You can watch video.<h/2>')
 })
 app.get('/facebook',(req,res)=>{
     res.send('<h3>Facebook logge in success...!</h3>')
+})
+app.get('/instagram',(req,res)=>{
+  res.send('<h1>Logged in Instagram.<h1>')
 })
 
 app.listen(process.env.PORT, () => {
