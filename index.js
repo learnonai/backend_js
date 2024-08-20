@@ -11,7 +11,7 @@ app.get('/twitter', (req,res)=>{
     res.send('somesh nawale now on the twitter...!')
 })
 app.get('/login',(req,res)=>{
-    res.send('<h1>Please login at ram hari gopal</h1>')
+    res.send('<h1>Please login at ram hari gopal for the browser view.</h1>')
 })
 
 app.get('/youtube', (req,res) =>{
